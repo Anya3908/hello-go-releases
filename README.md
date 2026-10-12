@@ -99,7 +99,7 @@ Workflow автоматически:
 
 ```powershell
 Invoke-WebRequest `
-  -Uri "https://github.com/xem1zo/hello-go/releases/download/v1.0.0/hello-go-windows-amd64.exe" `
+  -Uri "https://github.com/xem1zo/hello-go-releases/releases/download/v1.0.0/hello-go-windows-amd64.exe" `
   -OutFile "hello-go.exe"
 
 .\hello-go.exe
@@ -108,7 +108,7 @@ Invoke-WebRequest `
 ### Linux / macOS
 
 ```bash
-wget https://github.com/xem1zo/hello-go/releases/download/v1.0.0/hello-go-linux-amd64
+wget https://github.com/xem1zo/hello-go-releases/releases/download/v1.0.0/hello-go-linux-amd64
 chmod +x hello-go-linux-amd64
 ./hello-go-linux-amd64
 ```
@@ -134,8 +134,8 @@ Sum 1..10 = 55
 - **Job `test`** — зелёный при каждом push в `main`
 - **Job `release`** — запускается по тегу `v*`, создаёт Release с 5 бинарниками
 
-**Actions:** https://github.com/xem1zo/hello-go/actions  
-**Releases:** https://github.com/xem1zo/hello-go/releases
+**Actions:** https://github.com/xem1zo/hello-go-releases/actions  
+**Releases:** https://github.com/xem1zo/hello-go-releases/releases
 
 ## 📝 Вывод
 
